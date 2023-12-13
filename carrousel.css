@@ -1,0 +1,96 @@
+/* contenedor carrousel */
+#carousel {
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 auto;
+  position: relative;
+  background-color:#c5c7cb ;
+  padding: 10px;
+}
+/* contenido carrrousel */
+#slide-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding: 25px;
+  position: relative;
+
+}
+.slide {
+  padding: 20px;
+  scroll-snap-align: center;
+  position: relative;
+  min-width: 50%;
+  text-align: center;
+  background-color: white;
+}
+/* contenedor botones */
+.slide-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+/* contenedor indicadores */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.slide-indicator {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+  width: 50px;
+}
+.slide-indicator:after {
+  content: "";
+  border: 1px blue solid;
+  height: 10px;
+  width: 50px;
+}
+.slide-indicator.active:after,
+.slide-indicator:hover:after {
+  background-color: blue;
+}
+/* flechas
+.arrow {
+  background-color: rgb(12, 161, 45);
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 2px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+} */
+
+.slide-buttons{
+  position: absolute;
+  top: 70%;
+  left: 12%;
+  gap: 20px;
+}
+.carousel{
+  position: relative;
+}
+.contenedor_textos{
+  position: relative;
+}
